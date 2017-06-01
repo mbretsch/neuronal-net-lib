@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.mbretsch.neuronalnet</groupId>
   <artifactId>neuronal-net-lib</artifactId>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <name>Neuronal Net Lib</name>
   <description>Simple Implementation of Neuronal Net Algorithms for testing purposes</description>
   <packaging>jar</packaging>
@@ -17,6 +17,7 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      
     </plugins>
   </build>
   <dependencies>
@@ -26,4 +27,9 @@
     	<version>0.5.0</version>  	
     </dependency>
   </dependencies>
+  <scm>
+  	<url>scm:git:https://github.com/mbretsch/neuronal-net-lib.git</url>
+  	<connection>scm:git:https://github.com/mbretsch/neuronal-net-lib.git</connection>
+    <tag>HEAD</tag>
+  </scm>
 </project>
