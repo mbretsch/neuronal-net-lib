@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 /**
@@ -79,14 +80,18 @@ public class TrainingPatternLoader {
 	public void loadPatternsFromPNG(String dirname) {
 		PatternFromPng pfp = new PatternFromPng();
 
-		File directory = new File(dirname);
-		File[] files = directory.listFiles();
-		inputs = new double[files.length][];
-		outputs = new double[files.length][];
-		for (int i = 0; i < files.length; i++) {
-			inputs[i] = pfp.getPatternFromPNG(dirname + "/" + files[i].getName());
-			outputs[i] = new double[files.length];
-			outputs[i][i] = 1;
+		try {
+			File directory = new File(TrainingPatternLoader.class.getClassLoader().getResource(dirname).toURI());
+			File[] files = directory.listFiles();
+			inputs = new double[files.length][];
+			outputs = new double[files.length][];
+			for (int i = 0; i < files.length; i++) {
+				inputs[i] = pfp.getPatternFromPNG(files[i]);
+				outputs[i] = new double[files.length];
+				outputs[i][i] = 1;
+			}
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
 		}
 	}
 

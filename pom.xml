@@ -5,7 +5,6 @@
   <version>0.2-SNAPSHOT</version>
   <name>Neuronal Net Lib</name>
   <description>Simple Implementation of Neuronal Net Algorithms for testing purposes</description>
-  <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>

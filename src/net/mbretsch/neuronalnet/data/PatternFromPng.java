@@ -13,12 +13,12 @@ import javax.imageio.ImageIO;
  */
 public class PatternFromPng {
 
-	public double[] getPatternFromPNG(String filename) {
+	public double[] getPatternFromPNG(File pngFile) {
 
 		BufferedImage img = null;
 		double[] pattern = null;
 		try {
-			img = ImageIO.read(new File(filename));
+			img = ImageIO.read(pngFile);
 			int size = img.getHeight() * img.getWidth();
 			pattern = new double[size];
 			for (int i = 0; i < img.getHeight(); i++) {
