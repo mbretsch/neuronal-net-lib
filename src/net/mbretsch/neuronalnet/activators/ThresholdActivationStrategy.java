@@ -1,5 +1,10 @@
 package net.mbretsch.neuronalnet.activators;
 
+/**
+ * Activation only if a given threshold is reached.
+ * @author mbretsch
+ *
+ */
 public class ThresholdActivationStrategy implements ActivationStrategy {
 
 	private double threshold;

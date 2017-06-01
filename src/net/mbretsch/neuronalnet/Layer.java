@@ -3,6 +3,11 @@ package net.mbretsch.neuronalnet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Layer represents a Layer in a Neuronal Net. It is either Input, Output or Hidden and connected to a previous and next Layer.
+ * @author mbretsch
+ *
+ */
 public class Layer {
 
 	private List<Neuron> neurons = new ArrayList<Neuron>();

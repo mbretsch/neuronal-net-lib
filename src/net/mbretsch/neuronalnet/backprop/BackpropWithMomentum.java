@@ -9,6 +9,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.Neuron;
 import net.mbretsch.neuronalnet.Synapse;
 
+/**
+ * Standard Backprop with momentum learning.
+ * @author mbretsch
+ *
+ */
 public class BackpropWithMomentum implements BackpropAlgorithm {
 
 	private NeuralNetwork neuralNetwork;

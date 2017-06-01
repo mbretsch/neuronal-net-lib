@@ -6,6 +6,11 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+/**
+ * Helper to read input configuration from a PNG file. Used for image recognition.
+ * @author mbretsch
+ *
+ */
 public class PatternFromPng {
 
 	public double[] getPatternFromPNG(String filename) {

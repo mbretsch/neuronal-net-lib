@@ -9,6 +9,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.Neuron;
 import net.mbretsch.neuronalnet.Synapse;
 
+/**
+ * Quickprop implementation.
+ * @author mbretsch
+ *
+ */
 public class Quickprop implements BackpropAlgorithm {
 
 	private NeuralNetwork neuralNetwork;

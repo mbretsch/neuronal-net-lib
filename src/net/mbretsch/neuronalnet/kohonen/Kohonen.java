@@ -17,6 +17,11 @@ import net.mbretsch.neuronalnet.activators.SigmoidActivationStrategy;
 import net.mbretsch.neuronalnet.config.Config;
 import net.mbretsch.neuronalnet.javaplot.parser.LabeledParser;
 
+/**
+ * Implementation of Kohonen-Maps/Self Organazing Maps.
+ * @author mbretsch
+ *
+ */
 public class Kohonen {
 
 	private List<Neuron> inputNeurons = new ArrayList<Neuron>();

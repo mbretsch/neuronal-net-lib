@@ -3,6 +3,11 @@ package net.mbretsch.neuronalnet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A NeuralNetwork is used to Configure a Neural Net, setting Inputs and getting outputs after calculating.
+ * @author mbretsch
+ *
+ */
 public class NeuralNetwork {
 
 	protected String name;

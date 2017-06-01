@@ -9,6 +9,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.Neuron;
 import net.mbretsch.neuronalnet.Synapse;
 
+/**
+ * Most basic Backprop implementation.
+ * @author mbretsch
+ *
+ */
 public class SimpleBackprop implements BackpropAlgorithm {
 
 	private NeuralNetwork neuralNetwork;

@@ -1,5 +1,10 @@
 package net.mbretsch.neuronalnet.activators;
 
+/**
+ * Most common activation. Uses the logistic function.
+ * @author mbretsch
+ *
+ */
 public class SigmoidActivationStrategy implements ActivationStrategy {
 
 	private double c = 1d;

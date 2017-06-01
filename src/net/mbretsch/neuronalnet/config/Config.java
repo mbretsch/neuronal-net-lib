@@ -6,6 +6,11 @@ import java.util.Properties;
 
 import com.panayotis.gnuplot.JavaPlot;
 
+/**
+ * Helper for loading a properties file that contains the path to GnuPlot. The properties file should be in the classpath.
+ * @author mbretsch
+ *
+ */
 public class Config {
 
 	public static String PATH_GNUPLOT = "";

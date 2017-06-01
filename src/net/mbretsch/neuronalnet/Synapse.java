@@ -1,5 +1,10 @@
 package net.mbretsch.neuronalnet;
 
+/**
+ * A Synapse is a link between Neurons. It has a weight, a source neuron and a target neuron.
+ * @author mbretsch
+ *
+ */
 public class Synapse {
 
 	private Neuron sourceNeuron;

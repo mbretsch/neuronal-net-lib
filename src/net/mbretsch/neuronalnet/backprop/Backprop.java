@@ -12,6 +12,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.config.Config;
 import net.mbretsch.neuronalnet.modification.NetModification;
 
+/**
+ * Implementation of Backpropagation with three modes (Online-, Batch- and Stochastic-Learning). Uses {@link BackpropAlgorithm} which defines a specific algorithm implementation.
+ * @author mbretsch
+ *
+ */
 public class Backprop {
 
 	private NeuralNetwork neuralNetwork;

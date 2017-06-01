@@ -3,6 +3,12 @@ package net.mbretsch.neuronalnet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Implementation for a simple Recurent Net
+ * 
+ * @author mbretsch
+ *
+ */
 public class ElmanNetwork extends NeuralNetwork {
 
 	protected List<List<Neuron>> recurentLayerNeurons = new ArrayList<List<Neuron>>();

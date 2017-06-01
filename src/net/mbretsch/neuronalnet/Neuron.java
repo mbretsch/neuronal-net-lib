@@ -5,6 +5,11 @@ import java.util.List;
 
 import net.mbretsch.neuronalnet.activators.ActivationStrategy;
 
+/**
+ * Neurons are basic entities that use an {@link net.mbretsch.neuronalnet.activators.ActivationStrategy} to calculate their activation, calculate the summed weight of their inputs and a gradient for the error function.
+ * @author mbretsch
+ *
+ */
 public class Neuron {
 
 	private List<Synapse> inputSynapses = new ArrayList<Synapse>();

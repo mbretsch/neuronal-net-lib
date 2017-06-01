@@ -1,5 +1,10 @@
 package net.mbretsch.neuronalnet.activators;
 
+/**
+ * SoftPlus activation
+ * @author mbretsch
+ *
+ */
 public class SoftPlus implements ActivationStrategy {
 
 	@Override

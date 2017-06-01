@@ -8,6 +8,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.Neuron;
 import net.mbretsch.neuronalnet.Synapse;
 
+/**
+ * RProp implementation.
+ * @author mbretsch
+ *
+ */
 public class RProp implements BackpropAlgorithm {
 
 	private NeuralNetwork neuralNetwork;

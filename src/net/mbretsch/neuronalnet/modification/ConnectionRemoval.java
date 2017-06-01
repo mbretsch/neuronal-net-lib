@@ -10,6 +10,11 @@ import net.mbretsch.neuronalnet.NeuralNetwork;
 import net.mbretsch.neuronalnet.Neuron;
 import net.mbretsch.neuronalnet.Synapse;
 
+/**
+ * Removes synapses between neurons if these synapses have next to none contribution.
+ * @author mbretsch
+ *
+ */
 public class ConnectionRemoval implements NetModification {
 
 	private double rate;

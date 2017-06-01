@@ -7,6 +7,16 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Helper for loading of files that contain input configuration for a neural net.<br>
+ * FileFormat:
+ * <ul>
+ * <li>use # for a commented line which will be ignored</li>
+ * <li>every non-empty line is a comma-seperated array of inputs where first number is mapped to first neuron of the inputlayer, second number is mapped to second neuron of inputlayer, etc.</li> 
+ * </ul>
+ * @author mbretsch
+ *
+ */
 public class DatasetLoader {
 
 	private double[][] inputs;
